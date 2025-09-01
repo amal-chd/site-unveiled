@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Leaf, Heart, Sparkles } from "lucide-react";
-import chakraMeditation from "@/assets/chakra-meditation.jpg";
+import chakraMeditation from "@/assets/chakra-meditation-new.jpg";
 
 const Hero = () => {
   return (
