@@ -41,7 +41,12 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="healing" size="lg" className="text-lg px-8">
+            <Button 
+              variant="healing" 
+              size="lg" 
+              className="text-lg px-8"
+              onClick={() => window.open(`https://wa.me/918078135034?text=Hello! I would like to book an Ayurvedic consultation.`, '_blank')}
+            >
               Book Consultation
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">

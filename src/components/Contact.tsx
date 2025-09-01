@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, MessageCircle, Mail, Clock } from "lucide-react";
+import Map from "@/components/Map";
 
 const Contact = () => {
   const contactInfo = [
@@ -12,9 +13,10 @@ const Contact = () => {
       details: ["Poweloom Metta", "Mambaram - 670741"]
     },
     {
-      icon: Phone,
-      title: "Phone",
-      details: ["+91 98765 43210", "+91 87654 32109"]
+      icon: MessageCircle,
+      title: "WhatsApp",
+      details: ["+91 80781 35034", "Direct consultation"],
+      isWhatsApp: true
     },
     {
       icon: Mail,
@@ -60,11 +62,26 @@ const Contact = () => {
                           {detail}
                         </p>
                       ))}
+                      {info.isWhatsApp && (
+                        <Button 
+                          variant="chakra" 
+                          size="sm" 
+                          className="mt-3"
+                          onClick={() => window.open(`https://wa.me/918078135034?text=Hello! I would like to book an Ayurvedic consultation.`, '_blank')}
+                        >
+                          Chat on WhatsApp
+                        </Button>
+                      )}
                     </CardContent>
                   </Card>
                 ))}
-              </div>
             </div>
+
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold text-earth mb-4">Find Us</h3>
+              <Map />
+            </div>
+          </div>
 
             <Card className="bg-gradient-healing border-border/50">
               <CardHeader>

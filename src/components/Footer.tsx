@@ -1,4 +1,4 @@
-import { Leaf, MapPin, Phone, Mail } from "lucide-react";
+import { Leaf, MapPin, MessageCircle, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -56,8 +56,13 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-healing" />
-                <p className="text-cream/80">+91 98765 43210</p>
+                <MessageCircle className="h-5 w-5 text-healing" />
+                <button 
+                  onClick={() => window.open(`https://wa.me/918078135034?text=Hello! I would like to book an Ayurvedic consultation.`, '_blank')}
+                  className="text-cream/80 hover:text-cream transition-colors"
+                >
+                  +91 80781 35034
+                </button>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-healing" />
