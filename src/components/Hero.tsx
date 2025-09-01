@@ -35,7 +35,7 @@ const Hero = () => {
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed max-w-lg">
-              Discover the ancient wisdom of Ayurveda through personalized treatments, 
+              Discover the ancient wisdom of Ayurveda through personalized treatments with chinnu doctor, 
               natural medicines, and holistic healing approaches that address your unique constitution.
             </p>
           </div>
