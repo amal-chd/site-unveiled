@@ -8,35 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Earthy, natural color palette for Ayurveda clinic */
+    --background: 42 15% 97%;
+    --foreground: 25 25% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 44 20% 96%;
+    --card-foreground: 25 25% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 44 20% 96%;
+    --popover-foreground: 25 25% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 85 35% 35%;
+    --primary-foreground: 44 20% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 32 25% 85%;
+    --secondary-foreground: 25 25% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 12% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 160 25% 75%;
+    --accent-foreground: 25 25% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 12% 88%;
+    --input: 42 12% 92%;
+    --ring: 85 35% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Ayurveda-specific colors */
+    --earth-brown: 25 35% 45%;
+    --sage-green: 85 35% 35%;
+    --warm-cream: 42 25% 92%;
+    --healing-orange: 32 45% 65%;
+    --chakra-teal: 180 35% 55%;
+    --natural-beige: 42 15% 88%;
+
+    /* Gradients */
+    --gradient-earth: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--earth-brown)));
+    --gradient-healing: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--natural-beige)));
+    --gradient-chakra: linear-gradient(135deg, hsl(var(--chakra-teal)), hsl(var(--healing-orange)));
+
+    /* Shadows */
+    --shadow-natural: 0 4px 20px -8px hsl(var(--earth-brown) / 0.15);
+    --shadow-soft: 0 2px 12px -4px hsl(var(--sage-green) / 0.1);
+
+    /* Animations */
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

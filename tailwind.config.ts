@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				earth: 'hsl(var(--earth-brown))',
+				sage: 'hsl(var(--sage-green))',
+				cream: 'hsl(var(--warm-cream))',
+				healing: 'hsl(var(--healing-orange))',
+				chakra: 'hsl(var(--chakra-teal))',
+				natural: 'hsl(var(--natural-beige))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +73,18 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-healing': 'var(--gradient-healing)',
+				'gradient-chakra': 'var(--gradient-chakra)',
+			},
+			boxShadow: {
+				'natural': 'var(--shadow-natural)',
+				'soft': 'var(--shadow-soft)',
+			},
+			transitionTimingFunction: {
+				'gentle': 'var(--transition-gentle)',
 			},
 			keyframes: {
 				'accordion-down': {
